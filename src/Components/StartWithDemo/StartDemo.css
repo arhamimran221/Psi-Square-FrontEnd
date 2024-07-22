@@ -1,0 +1,18 @@
+.demo-card:hover {
+margin-top: -5px;  
+transition: ease-in-out 0.9s;
+}
+  .demo-card{
+    cursor: pointer;
+  }
+  .demo-card:hover .button {
+    opacity: 1;
+    background-color: rgba(8, 106, 216, 0.9); /* Change this to your preferred color */
+  }
+  
+  .button {
+    opacity: 0;
+    transition: opacity .5s ease, background-color .5s ease-out;
+    
+  }
+  

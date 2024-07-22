@@ -1,0 +1,9 @@
+.servise-card{
+    box-shadow: 0 0 60px 0 rgba(3, 95, 175, .12);
+    background-image: url(../../Assests/BackgroundServiseCard.webp);
+    transition: transform .2s; /* Animation */
+}
+
+.servise-card:hover{
+    transform: scale(1.03); 
+}

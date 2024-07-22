@@ -1,0 +1,77 @@
+.psi-banner{
+    background-image: url(../../Assests/banner-home.webp);
+    background-size: contain;
+}
+/* Base bounce animation */
+/* Base bounce animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+  
+  @keyframes bounce2 {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
+  @keyframes bounce3 {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+  }
+  
+  @keyframes bounce4 {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+  }
+  @keyframes bounce5 {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .bounce1 {
+    animation: bounce 3s infinite;
+  }
+  
+  .bounce2 {
+    animation: bounce2 2.5s infinite;
+  }
+  
+  .bounce3 {
+    animation: bounce3 3.5s infinite;
+  }
+  
+  .bounce4 {
+    animation: bounce4 3s infinite;
+  }
+  .bounce5 {
+    animation: bounce5 3s infinite;
+  }
+  .career-image-right::before{
+    background: #6bbbff;
+    content: "";
+    height: 500px;
+    position: absolute;
+    width: 400px;
+    z-index: -1;
+    margin-top: -70px;
+    margin-left: 150px;
+  }
+  .career-image-right{
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: 580px) {
+    .career-image-right::before{
+      height: 250px;
+      width: 200px;
+
+
+    }
+
+  }

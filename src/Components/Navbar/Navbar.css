@@ -1,0 +1,114 @@
+.quote-btn:hover {
+  background-color: #ffff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  transition: all 0.3s;
+}
+.nav-link:hover {
+  color: #f26f24;
+  /* transition: all 0.5s; */
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: inherit;
+}
+.nav-link {
+  display: block;
+  margin: 0;
+  cursor: pointer;
+}
+.nav-link:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #f26f24;
+  border-radius: 1px;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  visibility: hidden;
+  text-align: right;
+}
+.nav-link:hover:after {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.active {
+  color: #f26f24 !important;
+}
+.stick-trans {
+  position: fixed;
+  animation: slide-down 1s ease-out, fade-in 1s;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slide-down {
+  0% {
+    top: -100px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes myAnimClose {
+  0% {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-250px);
+
+  }
+}
+@keyframes myAnimQuote {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.open {
+  animation: myAnim 0.5s linear 0s 1 normal none;
+}
+.close {
+  animation: myAnimClose 0.5s linear 0s 1 normal none;
+  background:red;
+}
+.close:hover{
+    background: #000;
+}
+.quote_section{
+  animation: myAnimQuote 0.5s ease 0s 1 normal forwards;
+}
